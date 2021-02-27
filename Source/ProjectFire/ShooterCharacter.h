@@ -35,6 +35,6 @@ private:
 	void LookRightRate(float Rate);
 
 UPROPERTY(EditAnywhere)
-	float RotationSpeed;
+	float RotationSpeed = 50;
 
 };
