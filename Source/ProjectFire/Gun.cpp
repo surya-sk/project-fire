@@ -2,6 +2,7 @@
 
 
 #include "Gun.h"
+#include "Components/SkeletalMeshComponent.h"
 
 // Sets default values
 AGun::AGun()
@@ -9,6 +10,11 @@ AGun::AGun()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+	SetRootComponent(Root);
+
+	MeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MeshComponent"));
+	MeshComponent->SetupAttachment(Root);
 }
 
 // Called when the game starts or when spawned
