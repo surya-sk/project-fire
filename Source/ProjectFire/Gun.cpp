@@ -19,6 +19,7 @@ AGun::AGun()
 
 void AGun::PullTrigger()
 {
+	UE_LOG(LogTemp, Warning, TEXT("I've shot you"));
 }
 
 // Called when the game starts or when spawned
