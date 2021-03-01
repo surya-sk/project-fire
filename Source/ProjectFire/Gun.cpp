@@ -17,6 +17,10 @@ AGun::AGun()
 	MeshComponent->SetupAttachment(Root);
 }
 
+void AGun::PullTrigger()
+{
+}
+
 // Called when the game starts or when spawned
 void AGun::BeginPlay()
 {
