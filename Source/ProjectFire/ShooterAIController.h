@@ -16,4 +16,5 @@ class PROJECTFIRE_API AShooterAIController : public AAIController
 	
 protected:
 	void BeginPlay() override;
+	void Tick(float DeltaSeconds) override;
 };
