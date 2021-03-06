@@ -14,4 +14,6 @@ class PROJECTFIRE_API AShooterAIController : public AAIController
 {
 	GENERATED_BODY()
 	
+protected:
+	void BeginPlay() override;
 };
