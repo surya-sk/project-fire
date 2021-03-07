@@ -6,6 +6,7 @@
 #include "AIController.h"
 #include "ShooterAIController.generated.h"
 
+class UBehaviorTree;
 /**
  * 
  */
@@ -17,4 +18,8 @@ class PROJECTFIRE_API AShooterAIController : public AAIController
 protected:
 	void BeginPlay() override;
 	void Tick(float DeltaSeconds) override;
+
+private:
+	UPROPERTY(EditAnywhere)
+	UBehaviorTree* AIBehavior;
 };
