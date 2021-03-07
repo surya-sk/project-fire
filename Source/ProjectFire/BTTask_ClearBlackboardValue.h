@@ -17,4 +17,6 @@ class PROJECTFIRE_API UBTTask_ClearBlackboardValue : public UBTTask_BlackboardBa
 public:
 	UBTTask_ClearBlackboardValue();
 
+protected:
+	EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 };
