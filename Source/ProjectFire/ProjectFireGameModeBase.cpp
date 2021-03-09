@@ -3,3 +3,7 @@
 
 #include "ProjectFireGameModeBase.h"
 
+void AProjectFireGameModeBase::PawnKilled(APawn* KilledPawn)
+{
+
+}

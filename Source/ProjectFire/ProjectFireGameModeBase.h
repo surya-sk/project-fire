@@ -14,4 +14,6 @@ class PROJECTFIRE_API AProjectFireGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+public:
+	virtual void PawnKilled(APawn* KilledPawn);
 };
