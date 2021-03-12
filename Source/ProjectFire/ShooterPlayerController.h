@@ -13,5 +13,13 @@ UCLASS()
 class PROJECTFIRE_API AShooterPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+public:
+	virtual void GameHasEnded(class AActor* EndGameFocus = nullptr, bool isWinner = false) override;
+
+private:
+	UPROPERTY(EditAnywhere)
+	float RestartDelay = 5;
+
+	FTimerHandle RestartTimer;
 	
 };
