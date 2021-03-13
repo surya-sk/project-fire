@@ -14,7 +14,7 @@ class PROJECTFIRE_API AShooterPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 public:
-	virtual void GameHasEnded(class AActor* EndGameFocus = nullptr, bool isWinner = false) override;
+	virtual void GameHasEnded(class AActor* EndGameFocus = nullptr, bool bIsWinner = false) override;
 
 private:
 	UPROPERTY(EditAnywhere)
