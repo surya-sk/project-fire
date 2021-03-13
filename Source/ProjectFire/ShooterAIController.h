@@ -14,10 +14,13 @@ UCLASS()
 class PROJECTFIRE_API AShooterAIController : public AAIController
 {
 	GENERATED_BODY()
+
+public:
+	void Tick(float DeltaSeconds) override;
+	bool IsDead() const;
 	
 protected:
 	void BeginPlay() override;
-	void Tick(float DeltaSeconds) override;
 
 private:
 	UPROPERTY(EditAnywhere)
