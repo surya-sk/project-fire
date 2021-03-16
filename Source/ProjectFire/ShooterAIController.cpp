@@ -29,7 +29,7 @@ bool AShooterAIController::IsDead() const
 	AShooterCharacter* ControlledCharacter = Cast<AShooterCharacter>(GetPawn());
 	if (ControlledCharacter != nullptr)
 	{
-		ControlledCharacter->IsDead();
+		return ControlledCharacter->IsDead();
 	}
 	// Pawn detaches itself after death and if the Pawn isn't in possession, it is as good as dead. 
 	return true;
