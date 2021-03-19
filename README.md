@@ -1,3 +1,3 @@
 # project-fire
 
-Untitled Unreal Engine shooter game. Probably 3rd person. 
+Untitled Unreal Engine third-person sci-fi shooter game.
